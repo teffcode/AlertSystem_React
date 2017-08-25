@@ -3,6 +3,10 @@ import React, { Component } from 'react';
 import Menu from './components/Menu';
 import MenuItem from './components/MenuItem';
 import Label from './components/Label';
+import Header from './components/HeaderModel';
+import Search from './components/Search';
+import Cards from './components/Cards';
+
 
 class App extends Component {
 
@@ -16,13 +20,18 @@ class App extends Component {
 
   handleItemClick = () => (
     this.setState({
-      activeItem: name,
+      activeItem: "name",
     })
   );
 
   render() {
     return (
       <div>
+        <Header>
+          <Search/>
+        </Header>
+        <Cards cliente={"Gana"} titulo={"Revision"} cluster={"CLU_INT"} component={"proxyService"} />
+          
         Hola_mundo
 
         <Menu>
@@ -30,8 +39,8 @@ class App extends Component {
             <Label numberNotification="1" handleItemClick={this.handleItemClick}/>
           </MenuItem>
         </Menu>
-
-
+       
+      
       </div>
     );
   }
