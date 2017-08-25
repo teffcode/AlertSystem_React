@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
-import { Label as Labell } from 'semantic-ui-react';
+import { Label as Labell, Icon } from 'semantic-ui-react';
 
 const Label = ({ numberNotification }) => (
     <Labell
-        color='teal'
+        color='red'
+        size='large'
+        style={{ width:'40px'}}
     >
-    { numberNotification }
+        { numberNotification }
     </Labell>
 );
 
