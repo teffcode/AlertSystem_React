@@ -14,13 +14,16 @@ class App extends Component {
     })
   }
 
-  handleItemClick = () => (
+  handleItemClick = (e, {name}) => (
     this.setState({
       activeItem: name,
     })
   );
 
   render() {
+
+    const { activeItem } = this.state
+
     return (
       <div>
         Hola_mundo
