@@ -1,20 +1,23 @@
 import React, { Component } from 'react';
 
-import Menu from './components/Menu';
-import MenuItem from './components/MenuItem';
-import Label from './components/Label';
-import MenuContainer from './containers/MenuContainer';
-import Grid from './components/Grid';
+import Header from './components/HeaderModel';
+import Search from './components/Search';
+import Cards from './components/Cards';
 
-import { Segment } from 'semantic-ui-react';
+import MenuContainer from './containers/MenuContainer';
+
 
 class App extends Component {
-
   render() {
 
     return (
       <div>
-          <MenuContainer/>
+      
+        <Header>
+          <Search/>
+        </Header>
+        <MenuContainer/>
+      
       </div>
     );
   }
