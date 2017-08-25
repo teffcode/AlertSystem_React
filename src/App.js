@@ -26,11 +26,16 @@ class App extends Component {
         Hola_mundo
 
         <Menu>
-          <MenuItem nameItemMenu="Inbox">
-            <Label numberNotification="1" handleItemClick={this.handleItemClick}/>
+          <MenuItem 
+            nameItemMenu="Grupo Éxito"
+            activeItemMenu={activeItem === "Grupo Éxito"}
+            handleItemClick={this.handleItemClick}
+          >
+            <Label 
+              numberNotification="1" 
+            />
           </MenuItem>
         </Menu>
-
 
       </div>
     );

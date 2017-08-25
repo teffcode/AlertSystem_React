@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import { Menu as Menuu } from 'semantic-ui-react';
 
-const MenuItem = ({ children, handleItemClick, nameItemMenu }) => (
+const MenuItem = ({ nameItemMenu, activeItemMenu, handleItemClick, children }) => (
     <Menuu.Item 
-        name='inbox' 
+        name={ nameItemMenu }
+        active={ activeItemMenu }
         onClick={ handleItemClick }
     >
         { children }
